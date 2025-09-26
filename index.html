@@ -12,10 +12,11 @@
   <div id="loginPage" class="login-container">
     <div class="login-box">
       <h2>Teacher Login</h2>
-      <input type="text" id="username" placeholder="Username">
-      <input type="password" id="password" placeholder="Password">
+      <input type="text" placeholder="Email" 
+      cons
+      >
+      <input type="password" placeholder="Password">
       <button onclick="login()">Login</button>
-      <p id="errorMsg" style="color:red; display:none;">Invalid username or password!</p>
     </div>
   </div>
 
@@ -29,7 +30,7 @@
     </nav>
 
     <main>
-      
+    
       <section id="dashboard" class="page">
         <div class="card">
           <h3>Today's Attendance</h3>
@@ -39,6 +40,7 @@
           <h3>Attendance Chart</h3>
           <a href="chart.html" target="_blank">View Full Chart</a>
           <p>Chart Placeholder</p>
+
         </div>
       </section>
 
@@ -92,46 +94,46 @@
               <td>-</td>    
             </tr>
             <tr>    
-              <td>Arjun</td>
-              <td>6A-07</td>
-              <td class="present">Present</td>
-              <td>8:54 AM</td>
+                <td>Arjun</td>
+                <td>6A-07</td>
+                <td class="present">Present</td>
+                <td>8:54 AM</td>
             </tr>
             <tr>
-              <td>Sana</td>
-              <td>6A-08</td>
-              <td class="present">Present</td>
-              <td>8:57 AM</td>
+                <td>Sana</td>
+                <td>6A-08</td>
+                <td class="present">Present</td>
+                <td>8:57 AM</td>
             </tr>
             <tr>
-              <td>Riya</td>
-              <td>6A-09</td>
-              <td class="present">Present</td>
-              <td>8:56 AM</td>    
+                <td>Riya</td>
+                <td>6A-09</td>
+                <td class="present">Present</td>
+                <td>8:56 AM</td>    
             </tr>
             <tr>
-              <td>Kabir</td>
-              <td>6A-10</td>
-              <td class="absent">Absent</td>
-              <td>-</td>
+                <td>Kabir</td>
+                <td>6A-10</td>
+                <td class="present">Absent</td>
+                <td>8:55 AM</td>
             </tr>
             <tr>
-              <td>Fatima</td>
-              <td>6A-11</td>
-              <td class="absent">Absent</td>
-              <td>-</td>
+                <td>Fatima</td>
+                <td>6A-11</td>
+                <td class="present">Absent</td>
+                <td>8:58 AM</td>
             </tr>
             <tr>
-              <td>Aditya</td>
-              <td>6A-12</td>
-              <td class="present">Present</td>
-              <td>8:57 AM</td>
+                <td>Aditya</td>
+                <td>6A-12</td>
+                <td class="absent">Present</td>
+                <td>-</td>
             </tr>
             <tr>
-              <td>Simran</td>
-              <td>6A-13</td>
-              <td class="present">Present</td>
-              <td>8:57 AM</td>    
+                <td>Simran</td>
+                <td>6A-13</td>
+                <td class="present">Present</td>
+                <td>8:57 AM</td>    
             </tr>
           </tbody>
         </table>
@@ -141,18 +143,8 @@
 
   <script>
     function login() {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-      const errorMsg = document.getElementById("errorMsg");
-      
-      
-    
-      if (username == 101 | 103 && password== 102|104) {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("app").style.display = "block";
-      } else {
-        errorMsg.style.display = "block";
-      }
+      document.getElementById("loginPage").style.display = "none";
+      document.getElementById("app").style.display = "block";
     }
     
     function showPage(page) {
